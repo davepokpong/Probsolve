@@ -2,7 +2,7 @@
 using namespace std;
 
 int *find2max(int side[],int n){
-    int res[2];
+    static int res[2];
     int max=0, i;
     for (i=1;i<n;i++){
         if ((side[i]-side[i-1])>=max) max=side[i]-side[i-1];
